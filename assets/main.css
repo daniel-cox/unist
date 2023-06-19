@@ -1,0 +1,23 @@
+/*sets BG color for top nav*/
+div#top-nav {
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(10,19,53,1) 35%, rgba(31,51,126,1) 100%);
+}
+
+/*sets text color for top bar contact*/
+#contactInfo {
+    color: #fff;
+}
+/*center aligns contact details to col*/
+div#contactInfo {
+    display: grid;
+    justify-content: center;
+}
+
+/* slider img 100% no padding*/
+ul.splide__list {
+    padding: 0;
+}
+img, svg {
+    width: 100%;
+}
