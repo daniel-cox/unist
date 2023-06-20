@@ -8,8 +8,7 @@ p,h1,h2,h3,h4,h5,h6{
 /*sets BG color for top nav*/
 div#top-nav {
     background: rgb(2,0,36);
-    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(10,19,53,1) 35%, rgba(31,51,126,1) 100%);
-}
+    background: linear-gradient(0deg, rgb(0 0 0) 0%, rgb(5 10 33) 35%, rgb(9 27 92) 100%);}
 
 /*sets text color for top bar contact*/
 #contactInfo {
@@ -29,6 +28,17 @@ img, svg {
     width: 100%;
 }
 
+.my-carousel-progress {
+    background: #ccc;
+  }
+  
+  .my-carousel-progress-bar {
+    background: greenyellow;
+    height: 2px;
+    transition: width 400ms ease;
+    width: 0;
+  }
+
 /*description above cat grid*/
 .shortDesc {
     max-width: 90%;
@@ -36,7 +46,6 @@ img, svg {
 }
 
 /*Category grid overlay*/
-
 .image-container {
     position: relative;
 }
@@ -63,4 +72,9 @@ img, svg {
 .image-container:hover .overlay {
     opacity: 1;
 }
+
+.image-container:hover img {
+    filter: blur(7px);
+}
+
 .textOverlay{font-size:5em!important}
